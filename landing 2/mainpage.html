@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+           
+        }
+        body{
+            overflow-x: hidden;
+            font-family: arial;
+        }
+        #nav-background{
+            width: 99%;
+            height: 100px;
+            background-color: white;
+            box-shadow: 0 0 10px;
+            position: fixed;
+            z-index: 1;
+        }
+        #shopname{
+            position: absolute;
+            left: 100px;
+        }
+        #display-item{
+            position: absolute;
+            top: 200px;
+            left: 750px;
+            animation: infinite;
+            animation-duration: 1s;
+            animation-name: infintie;
+            transition: 1s;
+        }
+        .navs {
+            display: flex;
+            position: relative;
+            top: 10px;
+            margin-left: 200px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+            transition: 0.30s; 
+            cursor: pointer ;
+        }
+        
+        .navs:hover {
+            color: rgb(255, 145, 0);
+        }
+        
+        .nav-bar {
+            width: 100px;
+            height: 50px;
+            transition: 0.30s;
+            border-radius: 10px;
+            background-color: orange;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 375px;
+        }
+        #slog{
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            font-family: arial;
+        }
+        @keyframes infintie{
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(5px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        #home{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        #Games{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            margin-top: 768px;
+            position: absolute;
+            transition: 1s;
+        }
+        #Gameing{
+            width: 100%;
+            height: 100%;
+            margin-top: 1460px;
+            position: absolute;
+            transition: 1s;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        a{
+            text-decoration: none;
+        }
+        #para{
+            margin-top: 400px;
+            margin-left: 100px;
+            width: 600px;
+        }
+        .product{
+            background-color: white;
+            width: 150px;
+            height: 300px;
+            margin-left: 70px;
+            margin-top: 150px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            transition: .30s;
+        }
+        .product:hover{
+            margin-top: 140px;
+            transition: .30s;
+        }
+        .imges{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .item-name{
+            font-family: arial;
+            font-size: 20px;
+        }
+        .just{
+            opacity: 0.8;
+            font-family: arial ;
+            
+        }
+        .btn{
+            width: 90%;
+            height: 30px;
+            background-color: rgb(162, 0, 255);
+            color: white;
+            font-size: 20px;
+            border: 0px;    
+            border-radius: 15px;
+            transition: 1s;
+            
+        }
+        #text-size{
+            font-size: 20px;
+        }
+        #dis{
+            position: absolute;
+            margin-top: 500px;
+            margin-left: 75px;
+            width: 90%;
+        }
+        
+        @keyframes slide-right{
+            from{
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    </style>
+    <script>
+        function navpos(value,valuee){
+            document.getElementById("nav").style.marginLeft=value
+            document.getElementById("nav").style.width=valuee
+            document.getElementById("nav").style.display='block'
+        }
+        function change(name,value){
+            document.getElementById(name).innerHTML=value
+        }
+        function unchange(name,value){
+            document.getElementById(name).innerHTML=value
+        }
+        function hide(){
+            document.getElementById("nav").style.display='none'
+        }
+    </script>
+</head>
+<body id="body" onmousewheel="hide()">
+    <div id="home">
+        <div id="nav-background">
+            <div class="nav-bar" id="nav"></div>
+            <img src="shop name.png" width="100px" id="shopname">
+            <div class="navs">
+                <a href="#home"><p onclick="navpos('28%','')" class="navs">Home</p></a><a href="#Games"><p  class="navs" onclick="navpos('46.5%','')">Games</p></a><a href="#Gameing"><p href="" class="navs" onclick="navpos('66%','190px')">Gaming accessories</p></a>
+            </div>
+        </div>
+        <p id="slog">Unleash Your Next Adventure - Game On!</p>
+        <justify>
+        <p id="para">Step into a realm where imagination meets reality, and the boundaries of possibility are redefined. Gaming is more than just a pastime; it’s a portal to countless adventures, challenges, and stories. Whether you're embarking on epic quests, engaging in intense battles, or solving intricate puzzles, gaming offers an immersive experience that captivates your mind and stirs your soul.</p>
+    </justify>
+        <img src="display.png" width="500px" alt="" id="display-item">
+    </div><br>
+    <div id="Games">
+        <div class="product">
+            <img class="imges" src="gta v.png" width="100px" alt="">
+            <center><h1 class="item-name">GTA 5</h1></center>
+            <center><p class="just">Unleash Chaos, Rule Los Santos</p></center>
+            <center><button class="btn" id="btn1" onmouseover="change('btn1','1595/-')" onmouseleave="unchange('btn1','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="gta vc.png" width="100px" alt="">
+            <center><h1 class="item-name">GTA VC</h1></center>
+            <center><p class="just">Vice City: Where Crime Never Sleeps</p></center>
+            <center><button class="btn" id="btn2" onmouseover="change('btn2','700/-')" onmouseleave="unchange('btn2','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="gta san.png" width="100px" alt="">
+            <center><h1 class="item-name">GTA SAN</h1></center>
+            <center><p class="just">Rise to the Top or Crash to the Bottom</p></center>
+            <center><button class="btn" id="btn3" onmouseover="change('btn3','800/-')" onmouseleave="unchange('btn3','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="watch dogs.png" width="100px" alt="">
+            <center><h1 class="item-name" id="text-size">WATCH DOGS</h1></center>
+            <center><p class="just">Rise to the Top or Crash to the Bottom</p></center>
+            <center><button class="btn" id="btn4" onmouseover="change('btn4','600/-')" onmouseleave="unchange('btn4','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="forza orizen.png" width="100px" alt="">
+            <center><h1 class="item-name" id="text-size">FORZA ORIZEN</h1></center>
+            <center><p class="just">Race Beyond Limits with Forza Horizon!</p></center>
+            <center><button class="btn" id="btn5" onmouseover="change('btn5','5000/-')" onmouseleave="unchange('btn5','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="cyber punk.png" width="100px" alt="">
+            <center><h1 class="item-name" id="text-size">CYBER PUNK</h1></center>
+            <center><p class="just">Cyberpunk: Dive into the Digital Chaos</p></center>
+            <center><button class="btn" id="btn6" onmouseover="change('btn6','4788/-')" onmouseleave="unchange('btn6','Buy Now')">Buy now</button></center>
+        </div>
+        
+        <p id="dis">Open-world games are a genre of video games that provide players with expansive, immersive environments teeming with possibilities and adventures. Unlike linear games that follow a set path, open-world games allow players to roam freely through vast, richly detailed worlds, creating a sense of boundless freedom and exploration. These games often feature meticulously crafted landscapes that can include bustling urban centers, serene countryside, dense forests, expansive deserts, and mysterious underwater realms, each filled with diverse ecosystems and dynamic weather systems.
+
+            In open-world games, the player is typically given the autonomy to choose their path and actions, which can include embarking on epic quests, engaging in spontaneous side missions, or simply wandering to discover hidden secrets and treasures. The open-world design encourages players to interact with the environment in myriad ways, whether it's scaling mountains, diving into oceans, or navigating through cities.
+            
+            A hallmark of open-world games is the deep interactivity with non-playable characters (NPCs) and the world itself. NPCs often have their own routines and personalities, contributing to the game's realism and immersion. Players might find themselves forging alliances, battling enemies, or engaging in complex storylines that can change based on their decisions, providing a personalized gaming experience.
+            </p>
+    </div>
+    <div id="Gameing">
+        <div class="product">
+            <img class="imges" src="ps5.png" width="100px" alt="">
+            <center><h1 class="item-name">PS5</h1></center>
+            <center><p class="just">Game Without Boundaries</p></center>
+            <center><button class="btn" id="btn1,1" onmouseover="change('btn1,1','48,000/-')" onmouseleave="unchange('btn1,1','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="ps4.jfif" width="100px" alt="">
+            <center><h1 class="item-name">PS4</h1></center>
+            <center><p class="just">Epic Adventures Start Here</p></center>
+            <center><button class="btn" id="btn2" onmouseover="change('btn2,2','28,000/-')" onmouseleave="unchange('btn2,2','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="ps3.png" width="100px" alt="">
+            <center><h1 class="item-name">PS3</h1></center>
+            <center><p class="just">Unleash the Future of Gaming</p></center>
+            <center><button class="btn" id="btn3" onmouseover="change('btn3,3','18,000/-')" onmouseleave="unchange('btn3,3','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="Xbox.png" width="100px" alt="">
+            <center><h1 class="item-name" id="text-size">X-BOX</h1></center>
+            <center><p class="just">Next-Gen Performance</p></center>
+            <center><button class="btn" id="btn4,4" onmouseover="change('btn4,4','600/-')" onmouseleave="unchange('btn4,4','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="steer.webp" width="100px" alt="">
+            <center><h1 class="item-name" id="text-size">Steer wheel</h1></center>
+            <center><p class="just">Play with Simulation & Enjoy</p></center>
+            <center><button class="btn" id="btn5,5" onmouseover="change('btn5,5','8000/-')" onmouseleave="unchange('btn5,5','Buy Now')">Buy now</button></center>
+        </div>
+        <div class="product">
+            <img class="imges" src="ps2.png" width="100px" alt="">
+            <center><h1 class="item-name" id="text-size">PS2</h1></center>
+            <center><p class="just">Welcome To Gaming World</p></center>
+            <center><button class="btn" id="btn6,6" onmouseover="change('btn6,6','4788/-')" onmouseleave="unchange('btn6,6','Buy Now')">Buy now</button></center>
+        </div>
+        
+        <p id="dis">A gaming console is a specialized electronic device designed for interactive entertainment and digital gameplay. Unlike general-purpose computers, gaming consoles are specifically engineered to deliver high-performance gaming experiences with dedicated hardware and software optimized for smooth graphics rendering, fast processing speeds, and seamless gameplay.
+            
+            A hallmark of open-world games is the deep interactivity with non-playable characters (NPCs) and the world itself. NPCs often have their own routines and personalities, contributing to the game's realism and immersion. Players might find themselves forging alliances, battling enemies, or engaging in complex storylines that can change based on their decisions, providing a personalized gaming experience.
+            </p>
+    </div>
+</body>
+</html>

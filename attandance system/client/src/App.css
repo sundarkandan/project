@@ -1,0 +1,210 @@
+body{
+  background-color: rgb(0, 67, 70)!important;
+  color: cyan!important;
+}
+ header, footer {
+    display: none !important;
+  }
+  .navi{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+  }
+.fh{
+  height: 80vh;
+}
+.flex{ 
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+h1,p{
+  cursor: not-allowed;
+}
+.mt{
+  margin-top: 100px!important;
+}
+.box{
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid cyan;
+}
+.navs{
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  /* background-color: red; */
+}
+.black{
+  color: black ;
+}
+.date{
+  position: absolute;
+  top: 88%;
+  left: 5%;
+  color: black;
+  background-color: cyan;
+  padding: 10px;
+  border-radius: 10px;
+}
+.navs:hover{
+  border: 1px solid cyan;
+  padding: 10px;
+  border-radius: 10px;
+}
+.navgations{
+  width: 500px;
+}
+.box2{
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid cyan;
+}
+.f-col{
+  flex-direction: column;
+}
+.f-row{
+  flex-direction: row;
+}
+.form-control,.form-control:focus{
+  width: 90% !important;
+  background-color: transparent !important;
+  border: 1px solid cyan !important;
+  color: cyan !important;
+  box-shadow: none !important;
+  color: cyan !important;
+}
+.gap{
+  gap: 10px;
+}
+.btn1,.btn1:hover{
+  background-color: cyan !important;
+  color: black !important;
+}
+.btn2{
+  color: black !important;
+  width: 70% !important;
+  height: 15% !important;
+  background-color: cyan !important;
+  font-size: 20px !important;
+}
+.btn2:hover{
+  background-color: transparent !important;
+  color: cyan !important;
+  border: 1px solid cyan !important;
+}
+.form-control::placeholder{
+  color: cyan !important;
+  opacity: .6 !important;
+}
+.select{
+  color: black !important;
+}
+.custom-bg td{
+  background-color: rgb(0, 67, 70) !important;
+  color:cyan !important;
+  border: none !important;
+}
+table,th,tr,td{
+  text-align: center !important;
+  vertical-align:middle !important;
+}
+input{
+  cursor: pointer;
+}
+.p-absol{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: rgb(0, 67, 70);
+}
+.container{
+  animation: pop .3s;
+}
+.no-print{
+  display: none !important;
+}
+@media print{
+    .custom-bg td{
+  background-color: rgb(0, 67, 70) !important;
+  color:black !important;
+  
+    border: 1px solid black !important;
+}
+  .no-print{
+    display: flex !important;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  body{
+     color: black !important;
+  }
+  .container{
+    position: absolute;
+   
+  }
+
+  .btn,.form-control,header,footer{
+    display: none !important;
+  }
+  table,tr,td,th{
+    color: black !important;
+    background-color: cyan !important;
+  }
+  table,th{
+    border: 2px solid !important;
+  }
+  .title{
+    display: none;
+  }
+  h1{
+    color: black !important;
+  }
+  .pri-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+.pri-view{
+  display: none;
+}
+.clg{
+  margin-top: 100px;
+  gap: 50px;
+  border: none;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  flex-wrap: wrap;
+}
+.bold{
+  font-weight: bold;
+}
+.item{
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+
+  /* border: cyan 4px solid; */
+}
+.savep{
+  position: absolute;
+  left: 30%;
+  height: 80%;
+}
+@keyframes pop{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+.bg{
+  background-color: rgb(0, 67, 70)!important;
+}

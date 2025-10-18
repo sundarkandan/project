@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(39, 39, 39);
+    color: orange;
+}
+.bg2{
+     background-color: rgb(39, 39, 39);
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color{
+    color: orange !important;
+}
+.bg{
+    background-color: orange;
+}
+.cont100{
+    height: 100vh;
+}
+.cont80{
+    height: 80vh;
+}
+.form-control,.form-control:focus{
+    width: 80%;
+    box-shadow: none;
+    background-color: transparent;
+    border: 2px solid orange;
+    color: orange;
+}
+.form-control::placeholder{
+    color: rgba(255, 166, 0, 0.527);
+}
+.fcol{
+     flex-direction: column;
+}
+.selected{
+    background-color: orange;
+}
+.text-black{
+    color: black;
+    border: none!important;
+}

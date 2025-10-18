@@ -1,0 +1,371 @@
+.box{
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    border: 3px solid orange;
+    gap: 30px;
+}
+.box2{
+    height: 70vh;
+    gap: 20px;
+}
+.btn,.btn:hover{
+    background-color: orange;
+    color: black;
+}
+a{
+    color: orange;
+    font-weight: bold;
+}
+.nav-link,.nav-link:hover,.nav-link:active{
+    color: orange !important;
+}
+.imgs{
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid orange;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.imgs:active{
+    transform: scale(.8) !important;
+}
+.gaps{
+    gap: 30px;
+}
+.inners{
+    width: 90%;
+    height: 90%;
+    gap: 70%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+.details{
+    background-color: rgba(0, 0, 0, 0.774);
+    display: inline;
+    padding: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 2px solid orange;
+
+}
+
+.imgs2{
+    width: 50%;
+    height: 50%;
+    border: 1px solid orange;
+}
+.imgs3{
+     width: 200px;
+    height: 200px;
+    border: 1px solid orange;
+}
+.cont{
+    gap: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:200px ;
+}
+.inner2{
+    gap: 60%;
+    display: flex;
+}
+.conts{
+    margin-bottom: 200px;
+}
+
+.ticket-cont{
+    max-width: 100%;
+    overflow: auto;
+    margin-bottom: 160px;
+    display: flex;
+    gap: 20px;
+    align-items:center;
+    justify-content: center;
+    scroll-margin:190px ;
+   
+}
+.ticket-cont::-webkit-scrollbar{
+    display: none;
+}
+.rowl{
+    position: sticky;
+    background-color: rgb(39, 39, 39);
+    left: 0;
+    color: white;
+}
+.seat{
+    gap: 20px;
+    padding-left: 800px;
+}
+
+.seats,.seats2{
+    width: 50px;
+    height: 35px;
+    border-radius: 10px;
+    border: 3px solid;
+    transition: .2s;
+    
+}
+.seats:active{
+    transform: scale(1.5);
+    transition: .2s;
+}
+.seats:hover{
+    background-color: rgba(255, 166, 0, 0.466);
+    cursor: pointer;
+    color: black;
+    border: 3px solid orange;
+}
+
+.screen {
+  width: 70%;
+  
+  height: 30px;
+  background: #e0e0e0;
+  border: 5px solid #333;
+  border-radius: 10px 10px 90px 90px;
+  margin-bottom: 100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.screen-slog{
+    color:white;
+    font-weight: bold;
+    background-color: rgb(39, 39, 39);
+}
+.scroll{
+    animation: ani infinite 1s;
+}
+
+@keyframes ani{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+        filter: drop-shadow(0 0 10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes pop{
+    0%{
+        
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 10px);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.info{
+    gap: 10px;
+    /* flex-direction: column; */
+}
+.purchase-info{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(39, 39, 39);
+}
+.dates,.times{
+    gap: 20px;
+
+}
+.txt{
+        text-decoration: none;
+}
+.date,.time{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(39, 39, 39);
+    color: orange;
+    
+    border-radius: 10px;
+    border: 1px solid orange;
+    transition: .30s;
+    cursor: pointer;
+}
+.date:hover,.time:hover{
+    transition: .30s;
+    transform: scale(1.2);
+}
+.cart-items{
+    width: 400px;
+    position: relative;
+    background-color: rgb(39, 39, 39);
+    z-index: 2;
+    animation: pop .50s;
+    height: 70vh;
+    border-radius: 10px;
+    border: 2px solid;
+}
+.cards{
+    width: 16rem;
+    height: 20rem;
+    border: 2px solid orange;
+    border-radius: 10px;
+    z-index: 0 ;
+    position: relative;
+}
+.items{
+    gap: 20px;
+    overflow-y: auto;
+    height: 80vh;
+    overflow-x: none;
+}
+.item{
+    overflow-x: none;
+    width: 90%;
+    height: 40px;
+  
+}
+.del{
+    background-color: transparent;
+    border: 2px solid red;
+    color: red;
+    height: 35px;
+    font-size: 15px
+}
+.del:hover{
+    background-color: red;
+    color: black;
+}
+.del2{
+    width: 80%;
+}
+.parking{
+    width: 100px;
+    height: 100px;
+    border-top: 3px solid orange;
+    border-left: 3px solid orange;
+    border-right: 3px solid orange;
+    transition: .30s;
+    cursor: pointer;
+}
+.parking:hover{
+    background-color: orange;
+    color: black;
+    transition: .30s;
+}
+.reserved{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+}
+.boxed{
+    background-color: rgb(39, 39, 39);
+    border: 2px solid orange;
+    height: 60vh;
+    border-radius: 20px;
+}
+.ticket-poster{
+    border-radius: 20px;
+}
+.black{
+    color:black !important;
+}
+ul{
+    list-style-type:none;
+}
+.admin-boxes{
+    width: 25%;
+    height: 20vh;
+    border-radius: 10px;
+    border: 2px solid orange;
+    cursor: pointer;
+    transition: .30s;
+    text-decoration: none;
+}
+.admin-boxes:hover{
+    background-color: orange;
+    color: black;
+    transition: .30s;
+}
+.admin-boxes-2{
+    width: 50%;
+    cursor: pointer;
+    height: 20vh;
+    border-radius: 10px;
+    border: 2px solid orange;
+    text-decoration: none;
+    transition: .30s;
+}
+.admin-boxes-2:hover{
+    background-color: orange;
+    color: black;
+    transition: .30s;
+}
+.add{
+    width:50px;
+    height: 50px;
+    border-radius: 50px;
+   font-weight: bold;
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    top: 80%;
+    background-color: orange;
+    color: black;
+}
+
+.boxesAdup{
+    width: 60%;
+    height: 70vh;
+    background-color: rgb(39, 39, 39);
+    /* border: 3px solid orange;
+    border-radius: 20px; */
+    /* padding-left: 100px; */
+}
+.form2{
+    width: 100%;
+}
+.triler{   
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+    width: 100%;
+
+    height: 100%;
+    background-size: cover;
+    transition: 1s;
+}
+.check{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+.nobg{
+    background-color: transparent;
+}
+.booked{
+    background-color: gray !important;
+}
+
+.adtable{
+    background-color: transparent !important;
+    color: orange !important;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+.td,.th{
+    border: 3px solid rgb(71, 71, 71);
+    border-radius: 2px ;
+}
+
+@media print {
+    .noprint{
+        display: none;
+    }
+}

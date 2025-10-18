@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="di();anim('tab2','lefter .50s','tab3','lefter .50s')">
+    <h1 id="name">The Daydream Theater</h1>
+    <div class="nav-name">
+        <p class="navs" id="nav1" onclick="color_change('nav1','orange','nav2','rgb(104, 103, 103)','nav3','rgb(104, 103, 103)','tab1','tab2','tab3');anim('tab2','lefter .50s','tab3','lefter .50s')">UpComming Movies</p>
+        <p class="navs" id="nav2" onclick="color_change('nav2','orange','nav1','rgb(104, 103, 103)','nav3','rgb(104, 103, 103)','tab2','tab1','tab3');anim('tab1','righter2 .50s','tab3','lefter2 .50s')">Ticket Booking</p>
+        <p class="navs" id="nav3" onclick="color_change('nav3','orange','nav2','rgb(104, 103, 103)','nav1','rgb(104, 103, 103)','tab3','tab2','tab1');anim('tab2','righter .50s')">For Details</p>
+    </div>
+    <div class="tab" id="tab1">
+        <div class="img" >
+            <button class="up-name" id="upcoming">Indian 2 Moive</button>
+            <a href="book.html"><button class="book-now">Book Now</button></a>
+            <button class="play-trailer">Play Trailer</button>
+        </div>
+        <div class="img" id="movie2">
+            <button class="up-name">Kanguva Moive</button>
+            <a href="book.html"><button class="book-now">Book Now</button></a>
+            <button class="play-trailer">Play Trailer</button>
+        </div>
+        <div class="img" id="movie3">
+            <button class="up-name">Thnagalaan Moive</button>
+            <a href="book.html"><button class="book-now">Book Now</button></a>
+            <button class="play-trailer">Play Trailer</button>
+        </div>
+        <div class="img" id="movie4">
+            <button class="up-name">Pushpa 2 Moive</button>
+            <a href="book.html"><button class="book-now">Book Now</button></a>
+            <button class="play-trailer">Play Trailer</button>
+        </div>
+        <div class="img" id="movie5">
+            <button class="up-name">Thalivar 171 Moive</button>
+            <a href="book.html"><button class="book-now">Book Now</button></a>
+            <button class="play-trailer">Play Trailer</button>
+        </div>
+    </div>
+    <div id="tab2">
+        <h1 id="slogen">Now Showing The BlockBuster Hits</h1>
+        <div class="cards" >
+            <img src="kgf2.webp" class="mov-img" alt="">
+            <p class="movie-name">KGF 2</p>
+            <p class="faded">Screen:Platinum</p>
+            <a href="book.html"><input type="button" class="buy-now" value="Buy Tickets"></a>
+        </div>
+        <div class="cards" id="card2">
+            <img src="10687002.jpg" id='alter' class="mov-img" alt="">
+            <p class="movie-name">Leo</p>
+            <p class="faded">Screen:Dimond</p>
+            <a href="book.html"><input type="button" class="buy-now" value="Buy Tickets"></a>
+        </div>
+        <div class="cards" id="card3">
+            <img src="9041043.jpg" id='alter2' class="mov-img" alt="">
+            <p class="movie-name">Jailer</p>
+            <p class="faded">Screen:Gold</p>
+            <a href="book.html"><input type="button" class="buy-now" value="Buy Tickets"></a>
+        </div>
+        <div class="cards" id="card4">
+            <img src="12534956.jpg" id="alter3" class="mov-img" alt="">
+            <p class="movie-name">Godzilla X Kong</p>
+            <p class="faded">Screen:Silver</p>
+            <a href="book.html"><input type="button" class="buy-now" value="Buy Tickets"></a>
+        </div>
+    </div>
+    <div id="tab3">
+        <h1 class="head">Contact Information:</h1>
+        <ul>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@Daydream.com</p>
+            <p>Website: www.Daydreamtheater.com</p>
+        </ul><br><br>
+        <h1 class="head">Overview:</h1>
+        <p>Enchanted Dreams Theater is a premier venue dedicated to bringing the magic of performing arts to the heart of Fantasyland. With a mission to inspire, entertain, and educate, we offer a diverse array of performances ranging from classic plays and modern dramas to musicals and children's theater.</p><br><br>
+        <h1 class="head">Facilities:</h1>
+        <ul>
+            <p><b>Cafe & Bar:</b> Offering a selection of snacks, beverages, and light meals before and after shows.</p>
+            <p><b>Parking Garage:</b> On-site parking facility with ample space, including reserved spots for VIPs and accessible parking for patrons with disabilities.</p>
+        </ul>
+    </div>
+</body>
+</html>

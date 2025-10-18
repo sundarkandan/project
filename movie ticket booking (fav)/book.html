@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="bod" onload="bok()">
+    <h1 style="color: orange;" align="center">Movie Name</h1>
+    <center>
+    <div id="ticket-container">
+        <div id="main"><center><h1 id="text1" class="info-text">Booked Seats:</h1><h1 id="text2" class="info-text">0</h1></center></div>
+        <div id="main2"><center><h1 id="text3" class="info-text">Grand Total:</h1><h1 id="text4" class="info-text">₹0</h1></center></div>
+        <div class="info">
+            <div class="seat" id="selected"></div><h1 class="info-text" >Selected</h1>
+            <div class="seat" id="booked"></div><h1 class="info-text" >Booked</h1>
+            <div class="seat" id="avaliable"></div><h1 class="info-text" >Avaliable</h1>
+        </div>
+        <div class="seats" id="seat">
+            <div class='seat' id='seat1' onclick='ticket("seat1")'></div>
+<div class='seat' id='seat2' onclick='ticket("seat2")'></div>
+<div class='seat' id='seat3' onclick='ticket("seat3")'></div>
+<div class='seat' id='seat4' onclick='ticket("seat4")'></div>
+<div class='seat' id='seat5' onclick='ticket("seat5")'></div>
+<div class='seat' id='seat6' onclick='ticket("seat6")'></div>
+<div class='seat' id='seat7' onclick='ticket("seat7")'></div>
+<div class='seat' id='seat8' onclick='ticket("seat8")'></div>
+<div class='seat' id='seat9' onclick='ticket("seat9")'></div>
+<div class='seat' id='seat10' onclick='ticket("seat10")'></div>
+<div class='seat' id='seat11' onclick='ticket("seat11")'></div>
+<div class='seat' id='seat12' onclick='ticket("seat12")'></div>
+<div class='seat' id='seat13' onclick='ticket("seat13")'></div>
+<div class='seat' id='seat14' onclick='ticket("seat14")'></div>
+<div class='seat' id='seat15' onclick='ticket("seat15")'></div>
+<div class='seat' id='seat16' onclick='ticket("seat16")'></div>
+<div class='seat' id='seat17' onclick='ticket("seat17")'></div>
+<div class='seat' id='seat18' onclick='ticket("seat18")'></div>
+<div class='seat' id='seat19' onclick='ticket("seat19")'></div>
+<div class='seat' id='seat20' onclick='ticket("seat20")'></div>
+<div class='seat' id='seat21' onclick='ticket("seat21")'></div>
+<div class='seat' id='seat22' onclick='ticket("seat22")'></div>
+<div class='seat' id='seat23' onclick='ticket("seat23")'></div>
+<div class='seat' id='seat24' onclick='ticket("seat24")'></div>
+<div class='seat' id='seat25' onclick='ticket("seat25")'></div>
+<div class='seat' id='seat26' onclick='ticket("seat26")'></div>
+<div class='seat' id='seat27' onclick='ticket("seat27")'></div>
+<div class='seat' id='seat28' onclick='ticket("seat28")'></div>
+<div class='seat' id='seat29' onclick='ticket("seat29")'></div>
+<div class='seat' id='seat30' onclick='ticket("seat30")'></div>
+<div class='seat' id='seat31' onclick='ticket("seat31")'></div>
+<div class='seat' id='seat32' onclick='ticket("seat32")'></div>
+<div class='seat' id='seat33' onclick='ticket("seat33")'></div>
+<div class='seat' id='seat34' onclick='ticket("seat34")'></div>
+<div class='seat' id='seat35' onclick='ticket("seat35")'></div>
+<div class='seat' id='seat36' onclick='ticket("seat36")'></div>
+<div class='seat' id='seat37' onclick='ticket("seat37")'></div>
+<div class='seat' id='seat38' onclick='ticket("seat38")'></div>
+<div class='seat' id='seat39' onclick='ticket("seat39")'></div>
+<div class='seat' id='seat40' onclick='ticket("seat40")'></div>
+<div class='seat' id='seat41' onclick='ticket("seat41")'></div>
+<div class='seat' id='seat42' onclick='ticket("seat42")'></div>
+<div class='seat' id='seat43' onclick='ticket("seat43")'></div>
+<div class='seat' id='seat44' onclick='ticket("seat44")'></div>
+<div class='seat' id='seat45' onclick='ticket("seat45")'></div>
+<div class='seat' id='seat46' onclick='ticket("seat46")'></div>
+<div class='seat' id='seat47' onclick='ticket("seat47")'></div>
+<div class='seat' id='seat48' onclick='ticket("seat48")'></div>
+<div class='seat' id='seat49' onclick='ticket("seat49")'></div>
+<div class='seat' id='seat50' onclick='ticket("seat50")'></div>
+
+            <div class="screen"></div>
+            <p class="screen_way">This Way is Screen</p>
+        </div>
+        <div class="dates" id="dats">
+            <a href="#ti">
+            <div class="time" id="d1" onclick="chang('d1','d2','d3','d4','d5','d6','d7')">
+                <p class="day">Sun</p>
+                <h1 class="days">11</h1>
+            </div>
+            </a>
+
+            <a href="#ti">
+            <div class="time" id="d2" onclick="chang('d2','d1','d3','d4','d5','d6','d7')">
+                <p class="day">Mon</p>
+                <h1 class="days">12</h1>
+            </div>
+            </a>
+
+            <a href="#ti">
+            <div class="time" id="d3" onclick="chang('d3','d2','d1','d4','d5','d6','d7')">
+                <p class="day">Tue</p>
+                <h1 class="days">13</h1>
+            </div>
+            </a>
+
+            <a href="#ti">
+            <div class="time" id="d4" onclick="chang('d4','d2','d3','d1','d5','d6','d7')">
+                <p class="day">Wed</p>
+                <h1 class="days">14</h1>
+            </div>
+            </a>
+
+            <a href="#ti">
+            <div class="time" id="d5" onclick="chang('d5','d2','d3','d4','d1','d6','d7')">
+                <p class="day">Thu</p>
+                <h1 class="days">15</h1>
+            </div>
+            </a>
+
+            <a href="#ti">
+            <div class="time" id="d6" onclick="chang('d6','d2','d3','d4','d5','d1','d7')">
+                <p class="day">Fri</p>
+                <h1 class="days">16</h1>
+            </div>
+            </a>
+
+            <a href="#ti">
+            <div class="time" id="d7" onclick="chang('d7','d2','d3','d4','d5','d6','d1')">
+                <p class="day">Sat</p>
+                <h1 class="days">17</h1>
+            </div>
+            </a>
+        </div>
+        <div class="timeing" id="ti">
+            <a href="#sell">
+            <div class="times" id="times1" onclick="chang('times1','times2','times3','times4')">
+                <h1 class="time-val">11.00AM</h1>
+            </div>
+            </a>
+            <a href="#sell"><div class="times" id="times2" onclick="chang('times2','times1','times3','times4')"><h1 class="time-val">1:30PM</h1></div></a>
+            <a href="#sell"><div class="times" id="times3"><h1 class="time-val" onclick="chang('times3','times2','times1','times4')">6:30PM</h1></div></a>
+            <a href="#sell"><div class="times" id="times4"><h1 class="time-val"onclick="chang('times4','times2','times3','times1')">8:30PM</h1></div></a>
+        </div>
+    </div>
+    <a href="thanks.html"><button id="sell">Book Now</button></a>
+</center>
+</body>
+</html>
