@@ -1,0 +1,32 @@
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.message-animate {
+  animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}/* Custom Slim Scrollbar Logic */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px; /* Scrollbar thickness romba kammi panniyachu */
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Track-ah hide pannidrom */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155; /* Slate-700 color for thumb */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6; /* Hover pannumpodhu blue color-ah maarum */
+}
+
+/* Firefox-ku slim scrollbar logic */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
+}
